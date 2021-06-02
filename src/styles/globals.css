@@ -10,7 +10,15 @@ body {
 
 @layer components {
 	.sidebar-link {
-		@apply px-4 py-3 text-xs md:text-sm cursor-pointer hover:bg-gray-300;
+		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-gray-200 transition duration-200 ease-in-out;
+	}
+
+	.socialLink {
+		@apply flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer;
+	}
+
+	.active {
+		@apply bg-gray-200;
 	}
 
 	.hide-scrollbar::-webkit-scrollbar {

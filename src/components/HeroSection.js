@@ -11,7 +11,7 @@ function HeroSection() {
 		<div className="bg-[#F6F8FB] w-full">
 			<Nav />
 			<div className="flex flex-col-reverse md:flex-row items-center justify-between pt-8 pb-16 px-8 sm:px-16">
-				<div className="flex flex-col space-y-3 sm:space-y-6 items-start text-[#5C637C] xl:border-l-8 xl:pl-8 xl:border-[#DCDFFF] py-8">
+				<div className="flex flex-col space-y-3 sm:space-y-6 items-start text-[#5C637C] xl:border-l-8 xl:pl-8 xl:border-gray-200 py-8">
 					<p className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal">
 						Howdy,
 					</p>
@@ -26,16 +26,16 @@ function HeroSection() {
 					</h6>
 
 					<div className="flex space-x-5 pt-5">
-						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="socialLink">
 							<img src={Twitter} alt="Nikunj Thesiya" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl  w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="socialLink">
 							<img src={Instagram} alt="Nikunj Thesiya" className="" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="socialLink">
 							<img src={LinkedIn} alt="Nikunj Thesiya" className="" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="socialLink">
 							<img src={Github} alt="Nikunj Thesiya" className="" />
 						</div>
 					</div>
