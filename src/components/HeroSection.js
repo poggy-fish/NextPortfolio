@@ -26,16 +26,16 @@ function HeroSection() {
 					</h6>
 
 					<div className="flex space-x-5 pt-5">
-						<div className="flex items-center justify-center bg-white hover:shadow-inner w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
 							<img src={Twitter} alt="Nikunj Thesiya" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner  w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl  w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
 							<img src={Instagram} alt="Nikunj Thesiya" className="" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner  w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
 							<img src={LinkedIn} alt="Nikunj Thesiya" className="" />
 						</div>
-						<div className="flex items-center justify-center bg-white hover:shadow-inner  w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
+						<div className="flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer">
 							<img src={Github} alt="Nikunj Thesiya" className="" />
 						</div>
 					</div>
