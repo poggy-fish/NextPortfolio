@@ -18,10 +18,10 @@ function Nav() {
 					<p className="px-2 py-2">Portfolio</p>
 					<p className="px-2 py-2">Contact</p>
 				</div>
-				<button className="bg-[#DCDFFF] focus:outline-none font-medium text-[#5C637C] px-5 py-3 rounded-lg">
+				<button className="bg-gray-200 focus:outline-none font-medium text-[#5C637C] px-5 py-3 rounded-lg">
 					Hire me
 				</button>
-				<button className="lg:hidden bg-[#DCDFFF] focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl">
+				<button className="lg:hidden bg-gray-200 focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl">
 					<RiMenuLine />
 				</button>
 			</div>
