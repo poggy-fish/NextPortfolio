@@ -1,4 +1,4 @@
-import Logo from "../images/minlogo.png";
+import Logo from "../images/logo.svg";
 import { RiMenuLine } from "react-icons/ri";
 
 function Nav() {
