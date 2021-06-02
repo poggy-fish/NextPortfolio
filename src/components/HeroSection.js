@@ -1,4 +1,4 @@
-import HeroImg from "../images/lgimg.png";
+import HeroImg from "../images/lgimg2.png";
 import Facebook from "../images/facebook.svg";
 import Twitter from "../images/twitter.svg";
 import Instagram from "../images/instagram.svg";
