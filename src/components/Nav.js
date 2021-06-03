@@ -52,7 +52,7 @@ function Nav() {
 							spy={true}
 							smooth={true}
 							offset={-110}
-							duration={500}
+							duration={400}
 							className="navLink"
 						>
 							Home

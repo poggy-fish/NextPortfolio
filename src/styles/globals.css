@@ -37,6 +37,10 @@ body {
 		@apply px-3 py-2 rounded-lg border border-transparent hover:border-gray-200 cursor-pointer;
 	}
 
+	.hobbyBox {
+		@apply flex items-center justify-around px-5 py-4 bg-nik-lightGray rounded-3xl space-x-5 cursor-pointer hover:shadow-xl shadow-inner border border-transparent hover:border-gray-200;
+	}
+
 	.hide-scrollbar::-webkit-scrollbar {
 		width: 0px;
 		background: transparent; /* make scrollbar transparent */
