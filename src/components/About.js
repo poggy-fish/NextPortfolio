@@ -11,7 +11,9 @@ function About() {
 			className="flex flex-col items-center bg-white pt-10 pb-16 px-4 sm:px-16"
 			id="about"
 		>
-			<h3 className="text-5xl font-bold text-nik-dark mb-10">About me</h3>
+			<h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nik-dark mb-10">
+				About me
+			</h3>
 			<div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contai bg-nik-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
 				<img src={AboutImg} alt="Nikunj Thesiya" className="rounded-full" />
 			</div>
@@ -27,14 +29,14 @@ function About() {
 					websites.
 				</p>
 				<h3 className="text-2xl text-gray-600 font-bold">I Love</h3>
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 xl:flex items-center justify-between">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-2 md:gap-5 xl:flex items-center justify-between">
 					<div className="hobbyBox">
 						<img
 							src={UiDesign}
 							alt="Nikunj Thesiya hobby"
-							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-12"
+							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
 						/>
-						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600">
+						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
 							DESIGNING UI
 						</h3>
 					</div>
@@ -42,9 +44,9 @@ function About() {
 						<img
 							src={Coding}
 							alt="Nikunj Thesiya hobby"
-							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-12"
+							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
 						/>
-						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600">
+						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
 							CODING
 						</h3>
 					</div>
@@ -52,9 +54,9 @@ function About() {
 						<img
 							src={Mountain}
 							alt="Nikunj Thesiya hobby"
-							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-12"
+							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
 						/>
-						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600">
+						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
 							MOUNTAINS
 						</h3>
 					</div>
@@ -62,9 +64,9 @@ function About() {
 						<img
 							src={Travel}
 							alt="Nikunj Thesiya hobby"
-							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-12"
+							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
 						/>
-						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600">
+						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
 							TRAVELLING
 						</h3>
 					</div>
@@ -72,9 +74,9 @@ function About() {
 						<img
 							src={Music}
 							alt="Nikunj Thesiya hobby"
-							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:-12"
+							className="w-8 sm:w-10 md:w-10 lg:w-9 xl:w-10"
 						/>
-						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600">
+						<h3 className="text-base sm:text-base md:text-base lg:text-base xl:text-lg text-gray-600">
 							MUSIC
 						</h3>
 					</div>
