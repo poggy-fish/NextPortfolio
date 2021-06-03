@@ -9,6 +9,18 @@ body {
 }
 
 @layer components {
+	* {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	.stickyNavbar {
+		@apply sticky top-0;
+	}
+
+	.stickyNavbarStyles {
+		@apply flex bg-[#F6F8FB] items-center justify-between w-full px-8 sm:px-16 py-5 shadow-lg;
+	}
+
 	.sidebar-link {
 		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-gray-200 transition duration-200 ease-in-out;
 	}
@@ -18,7 +30,11 @@ body {
 	}
 
 	.active {
-		@apply bg-gray-200;
+		@apply bg-gray-100;
+	}
+
+	.navLink {
+		@apply px-3 py-2 rounded-lg border border-transparent hover:border-gray-200 cursor-pointer;
 	}
 
 	.hide-scrollbar::-webkit-scrollbar {

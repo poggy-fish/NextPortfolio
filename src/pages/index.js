@@ -1,5 +1,7 @@
 import Head from "next/head";
+import About from "../components/About";
 import HeroSection from "../components/HeroSection";
+import Nav from "../components/Nav";
 import favicon from "../images/logo.png";
 
 export default function Home() {
@@ -9,7 +11,9 @@ export default function Home() {
 				<title>Nikunj Thesiya</title>
 				<link rel="icon" href={favicon} />
 			</Head>
+			<Nav />
 			<HeroSection />
+			<About />
 		</div>
 	);
 }

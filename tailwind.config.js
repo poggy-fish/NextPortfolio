@@ -6,7 +6,14 @@ module.exports = {
 	],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				nik: {
+					lightGray: "#F6F8FB",
+					dark: "#5C637C",
+				},
+			},
+		},
 	},
 	variants: {
 		extend: {},

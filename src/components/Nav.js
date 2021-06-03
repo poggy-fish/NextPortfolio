@@ -1,31 +1,102 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../images/logo.svg";
 import { RiMenuLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-scroll";
 
 function Nav() {
 	const [sidebar, setSidebar] = useState(false);
+	const [navbar, setNavbar] = useState(false);
+
 	const variants = {
 		open: { opacity: 1, x: 0 },
 		closed: { opacity: 0, x: "-100%" },
 	};
+
+	const changeBackground = () => {
+		if (window.scrollY >= 200) {
+			setNavbar(true);
+		} else {
+			setNavbar(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", changeBackground);
+	}, []);
+
 	return (
-		<>
-			<div className="flex bg-[#F6F8FB] sticky top-0 items-center justify-between w-full py-8 px-8 sm:px-16">
+		<motion.div
+			animate={
+				navbar ? { position: "sticky", top: 0 } : { position: "relative" }
+			}
+		>
+			<div
+				className={
+					navbar
+						? "stickyNavbarStyles"
+						: "flex bg-[#F6F8FB] items-center justify-between w-full py-8 px-8 sm:px-16"
+				}
+			>
 				<div className="flex items-center space-x-3">
 					<img src={Logo} alt="Nikunj Thesiya" className="w-12" />
 					<h3 className="text-2xl text-[#5C637C] font-light hidden md:flex">
 						NIKUNJ<span className="font-semibold">THESIYA</span>
 					</h3>
 				</div>
-				<div className="flex text-[#5C637C] items-center space-x-5">
-					<div className="hidden lg:flex items-center space-x-5">
-						<p className="px-2 py-2">Home</p>
-						<p className="px-2 py-2">About</p>
-						<p className="px-2 py-2">Resume</p>
-						<p className="px-2 py-2">Portfolio</p>
-						<p className="px-2 py-2">Contact</p>
+				<div className="flex text-[#5C637C] items-center space-x-3">
+					<div className="hidden lg:flex items-center space-x-4">
+						<Link
+							to="heroSection"
+							spy={true}
+							smooth={true}
+							offset={-110}
+							duration={500}
+							className="navLink"
+						>
+							Home
+						</Link>
+						<Link
+							to="about"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							className="navLink"
+						>
+							About
+						</Link>
+						<Link
+							to="resume"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							className="navLink"
+						>
+							Resume
+						</Link>
+						<Link
+							to="portfolio"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							className="navLink"
+						>
+							Portfolio
+						</Link>
+						<Link
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							className="navLink"
+						>
+							Contact
+						</Link>
 					</div>
 					<button className="bg-gray-200 focus:outline-none font-medium text-[#5C637C] px-5 py-3 rounded-lg">
 						Hire me
@@ -44,7 +115,7 @@ function Nav() {
 				animate={sidebar ? "open" : "closed"}
 				variants={variants}
 			>
-				<div className="flex items-center justify-between py-8 sticky top-0 w-full">
+				<div className="flex items-center justify-between py-8 sticky top-0 w-full bg-nik-lightGray">
 					<div className="flex items-center space-x-2">
 						<img src={Logo} alt="Nikunj Thesiya" className="w-10 sm:w-12" />
 						<h3 className="text-xl text-[#5C637C] font-light">
@@ -61,29 +132,69 @@ function Nav() {
 				</div>
 
 				{/* Mobile First Menu */}
-				<div className="flex flex-col items-center space-y-2 w-full">
-					<p className="sidebar-link active" onClick={() => setSidebar(false)}>
+				<div className="flex flex-col items-center space-y-2 w-full py-5">
+					<Link
+						to="heroSection"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="sidebar-link"
+						onClick={() => setSidebar(false)}
+					>
 						Home
-					</p>
-					<p className="sidebar-link" onClick={() => setSidebar(false)}>
+					</Link>
+					<Link
+						to="about"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="sidebar-link"
+						onClick={() => setSidebar(false)}
+					>
 						About
-					</p>
-					<p className="sidebar-link" onClick={() => setSidebar(false)}>
+					</Link>
+					<Link
+						to="resume"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="sidebar-link"
+						onClick={() => setSidebar(false)}
+					>
 						Resume
-					</p>
-					<p className="sidebar-link" onClick={() => setSidebar(false)}>
+					</Link>
+					<Link
+						to="portfolio"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="sidebar-link"
+						onClick={() => setSidebar(false)}
+					>
 						Portfolio
-					</p>
-					<p className="sidebar-link" onClick={() => setSidebar(false)}>
+					</Link>
+					<Link
+						to="contact"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="sidebar-link"
+						onClick={() => setSidebar(false)}
+					>
 						Contact
-					</p>
+					</Link>
 				</div>
 
-				<button className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full mt-10">
+				<button className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full mt-3 mb-8">
 					Hire me
 				</button>
 			</motion.div>
-		</>
+		</motion.div>
 	);
 }
 
