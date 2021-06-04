@@ -21,7 +21,7 @@ import StyledComponents from "../images/styled-components.svg";
 import SemanticUI from "../images/semantic.svg";
 import MaterialUI from "../images/material-ui.svg";
 import Github from "../images/github.svg";
-import SkillCard from "./Skillcard";
+import SkillCard from "./SkillCard";
 
 function Resume() {
 	return (
