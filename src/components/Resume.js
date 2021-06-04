@@ -5,6 +5,23 @@ import FreeCodeCamp from "../images/freecodecamp.svg";
 import LinkedIn from "../images/linkedin.svg";
 import Coursera from "../images/coursera.svg";
 import Educative from "../images/educative.svg";
+import JavaScript from "../images/javascript.svg";
+import React from "../images/react.svg";
+import NextJS from "../images/nextjs-2.svg";
+import NPM from "../images/npm.svg";
+import Redux from "../images/redux.svg";
+import Firebase from "../images/firebase.svg";
+import Figma from "../images/figma.svg";
+import XD from "../images/adobexd.svg";
+import Jquery from "../images/jquery.svg";
+import Bootstrap from "../images/bootstrap.svg";
+import TailwindCSS from "../images/tailwindcss.svg";
+import Sass from "../images/sass.svg";
+import StyledComponents from "../images/styled-components.svg";
+import SemanticUI from "../images/semantic.svg";
+import MaterialUI from "../images/material-ui.svg";
+import Github from "../images/github.svg";
+import SkillCard from "./Skillcard";
 
 function Resume() {
 	return (
@@ -79,6 +96,29 @@ function Resume() {
 						title="Understanding Redux: A Beginner's Guide To State Management"
 						link="#"
 					/>
+				</div>
+			</div>
+			<div className="flex flex-col items-start self-start w-full mb-10">
+				<h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-nik-dark mb-6 md:mb-10 px-8 sm:px-0">
+					Skills
+				</h6>
+				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full mb-6 px-8 sm:px-0 content-center items-center">
+					<SkillCard img={XD} title="Adobe XD" />
+					<SkillCard img={Figma} title="Figma" />
+					<SkillCard img={Bootstrap} title="Bootstrap" />
+					<SkillCard img={Sass} title="SASS" />
+					<SkillCard img={TailwindCSS} title="Tailwind CSS" />
+					<SkillCard img={JavaScript} title="JavaScript" />
+					<SkillCard img={Jquery} title="Jquery" />
+					<SkillCard img={React} title="React" />
+					<SkillCard img={Redux} title="Redux" />
+					<SkillCard img={NextJS} title="NextJS" />
+					<SkillCard img={StyledComponents} title="Styled Components" />
+					<SkillCard img={MaterialUI} title="Material UI" />
+					<SkillCard img={SemanticUI} title="Semantic UI" />
+					<SkillCard img={Firebase} title="Firebase" />
+					<SkillCard img={NPM} title="NPM" />
+					<SkillCard img={Github} title="Github" />
 				</div>
 			</div>
 		</div>
