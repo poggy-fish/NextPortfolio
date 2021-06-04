@@ -98,11 +98,11 @@ function Resume() {
 					/>
 				</div>
 			</div>
-			<div className="flex flex-col items-start self-start w-full mb-10">
+			<div className="flex flex-col items-start self-start w-full">
 				<h6 className="text-xl md:text-2xl lg:text-3xl font-bold text-nik-dark mb-6 md:mb-10 px-8 sm:px-0">
 					Skills
 				</h6>
-				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full mb-6 px-8 sm:px-0 content-center items-center">
+				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6 w-full mb-6 px-8 sm:px-0 content-center items-center">
 					<SkillCard img={XD} title="Adobe XD" />
 					<SkillCard img={Figma} title="Figma" />
 					<SkillCard img={Bootstrap} title="Bootstrap" />
