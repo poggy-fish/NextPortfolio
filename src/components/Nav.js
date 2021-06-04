@@ -78,14 +78,14 @@ function Nav() {
 							Resume
 						</Link>
 						<Link
-							to="portfolio"
+							to="projects"
 							spy={true}
 							smooth={true}
 							offset={-90}
 							duration={500}
 							className="navLink"
 						>
-							Portfolio
+							Projects
 						</Link>
 						<Link
 							to="contact"
@@ -167,7 +167,7 @@ function Nav() {
 						Resume
 					</Link>
 					<Link
-						to="portfolio"
+						to="projects"
 						spy={true}
 						smooth={true}
 						offset={-90}
@@ -175,7 +175,7 @@ function Nav() {
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>
-						Portfolio
+						Projects
 					</Link>
 					<Link
 						to="contact"

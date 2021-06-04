@@ -2,6 +2,7 @@ import Head from "next/head";
 import About from "../components/About";
 import HeroSection from "../components/HeroSection";
 import Nav from "../components/Nav";
+import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import favicon from "../images/logo.svg";
 
@@ -16,6 +17,7 @@ export default function Home() {
 			<HeroSection />
 			<About />
 			<Resume />
+			<Projects />
 		</div>
 	);
 }
