@@ -2,7 +2,8 @@ import Head from "next/head";
 import About from "../components/About";
 import HeroSection from "../components/HeroSection";
 import Nav from "../components/Nav";
-import favicon from "../images/logo.png";
+import Resume from "../components/Resume";
+import favicon from "../images/logo.svg";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<Nav />
 			<HeroSection />
 			<About />
+			<Resume />
 		</div>
 	);
 }

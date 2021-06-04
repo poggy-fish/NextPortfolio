@@ -4,11 +4,12 @@ import Coding from "../images/code.svg";
 import Mountain from "../images/mountain.svg";
 import Travel from "../images/travelling.svg";
 import Music from "../images/headphones.svg";
+import Educative from "../images/educative.svg";
 
 function About() {
 	return (
 		<div
-			className="flex flex-col items-center bg-white pt-10 pb-16 px-4 sm:px-16"
+			className="flex flex-col items-center bg-white pt-10 pb-12 px-4 sm:px-16"
 			id="about"
 		>
 			<h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nik-dark mb-10">

@@ -15,7 +15,7 @@ function Nav() {
 	};
 
 	const changeBackground = () => {
-		if (window.scrollY >= 200) {
+		if (window.scrollY >= 80) {
 			setNavbar(true);
 		} else {
 			setNavbar(false);
@@ -52,7 +52,7 @@ function Nav() {
 							spy={true}
 							smooth={true}
 							offset={-110}
-							duration={400}
+							duration={200}
 							className="navLink"
 						>
 							Home
