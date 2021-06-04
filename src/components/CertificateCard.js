@@ -9,16 +9,18 @@ function CertificateCard({ logo, company, title, link }) {
 					{company}
 				</span>
 			</div>
-			<h3 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-500 line-clamp-3 pb-3">
-				{title}
-			</h3>
-			<a
-				href={link}
-				target="_blank"
-				className="bg-gray-500 text-white text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg px-3 py-3 sm:px-4 sm:py-3 lg:px-5 lg:py-4 rounded-xl hover:shadow-lg hover:bg-gray-200 hover:text-gray-500"
-			>
-				View Certificate
-			</a>
+			<div className="flex flex-col items-start space-y-6">
+				<h3 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-500 line-clamp-3">
+					{title}
+				</h3>
+				<a
+					href={link}
+					target="_blank"
+					className="bg-gray-500 text-white text-xs sm:text-sm md:text-sm lg:text-base xl:text-lg px-3 py-3 sm:px-4 sm:py-3 lg:px-5 lg:py-4 rounded-xl hover:shadow-lg hover:bg-gray-200 hover:text-gray-500"
+				>
+					View Certificate
+				</a>
+			</div>
 		</div>
 	);
 }
