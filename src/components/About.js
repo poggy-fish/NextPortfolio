@@ -21,7 +21,7 @@ function About() {
 
 			<div className="p-8 flex flex-col space-y-4">
 				<p className="text-justify text-lg text-gray-600">
-					I'm a Freelance JavaScript Developer & Selt taught Programmer based in
+					I'm a Freelance JavaScript Developer & Self taught Programmer based in
 					Gujarat, INDIA. I have completed my graduation in computer science,
 					and currently I’m pursuing my Master Degree in computer science. I'm a
 					self taught programmer and very passionate and dedicated to my work.
