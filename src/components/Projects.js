@@ -5,6 +5,7 @@ import MusicPlayer from "../images/musicplayer.jpg";
 import GithubWhite from "../images/github-white.svg";
 import Github from "../images/github.svg";
 import ProjectCard2 from "./ProjectCard2";
+import Portfolio from "../images/portfolio.svg";
 
 function Projects() {
 	return (
@@ -17,10 +18,10 @@ function Projects() {
 			</h3>
 			<div className="flex flex-col items-center space-y-8">
 				<ProjectCard
-					img={GoogleClone}
-					title="Google Clone"
-					description="I built this Google Clone using NextJS, React, Tailwind CSS & Google API."
-					link=""
+					img={Portfolio}
+					title="My Portfolio"
+					description="I built this Responsive Portfolio using NextJS, Tailwind CSS & Framer Motion."
+					link="#"
 				/>
 				<ProjectCard2
 					img={InstagramClone}
@@ -29,6 +30,12 @@ function Projects() {
 					link=""
 				/>
 				<ProjectCard
+					img={GoogleClone}
+					title="Google Clone"
+					description="I built this Google Clone using NextJS, React, Tailwind CSS & Google API."
+					link=""
+				/>
+				<ProjectCard2
 					img={MusicPlayer}
 					title="Music Player"
 					description="Responsive Music Player built with React, SCSS & React Hooks"
