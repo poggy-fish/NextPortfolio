@@ -131,6 +131,7 @@ function Nav() {
 
 			<motion.div
 				className="z-50 flex items-center lg:hidden flex-col fixed top-0 h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB]  overflow-y-scroll hide-scrollbar shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-md"
+				initial={{ opacity: 0, x: "-100%" }}
 				animate={sidebar ? "open" : "closed"}
 				variants={variants}
 			>
