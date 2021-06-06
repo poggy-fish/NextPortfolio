@@ -22,7 +22,7 @@ body {
 	}
 
 	.sidebar-link {
-		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-white transition duration-200 ease-in-out;
+		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-white hover:shadow-md transition duration-200 ease-in-out;
 	}
 
 	.socialLink {
@@ -30,11 +30,11 @@ body {
 	}
 
 	.active {
-		@apply bg-gray-100;
+		@apply bg-white shadow-sm;
 	}
 
 	.navLink {
-		@apply px-3 py-2 rounded-lg border border-transparent hover:border-gray-200 cursor-pointer;
+		@apply px-3 py-2 rounded-lg border border-transparent hover:bg-white hover:shadow-md cursor-pointer;
 	}
 
 	.hobbyBox {

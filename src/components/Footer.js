@@ -8,7 +8,7 @@ function Footer() {
 			className="flex flex-col items-center bg-nik-lightGray pt-10 pb-12 px-10 sm:px-16"
 			id="contact"
 		>
-			<div className="bg-nik-dark flex flex-col items-center lg:flex-row w-full px-6 py-8 sm:px-10 sm:py-8 rounded-3xl justify-between space-y-6 lg:space-y-0">
+			<div className="bg-nik-dark flex flex-col items-center lg:flex-row w-full px-6 py-8 sm:px-10 sm:py-8 rounded-3xl justify-between space-y-6 lg:space-y-0 shadow-lg">
 				<Link
 					to="heroSection"
 					smooth={true}

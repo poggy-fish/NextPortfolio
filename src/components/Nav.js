@@ -44,6 +44,7 @@ function Nav() {
 					smooth={true}
 					offset={-110}
 					duration={200}
+					activeClass="active"
 					className="flex items-center space-x-3 cursor-pointer"
 				>
 					<img src={Logo} alt="Nikunj Thesiya" className="w-12" />
@@ -59,6 +60,7 @@ function Nav() {
 							smooth={true}
 							offset={-110}
 							duration={200}
+							activeClass="active"
 							className="navLink"
 						>
 							Home
@@ -69,6 +71,7 @@ function Nav() {
 							smooth={true}
 							offset={-90}
 							duration={500}
+							activeClass="active"
 							className="navLink"
 						>
 							About
@@ -79,6 +82,7 @@ function Nav() {
 							smooth={true}
 							offset={-90}
 							duration={500}
+							activeClass="active"
 							className="navLink"
 						>
 							Resume
@@ -89,6 +93,7 @@ function Nav() {
 							smooth={true}
 							offset={-90}
 							duration={500}
+							activeClass="active"
 							className="navLink"
 						>
 							Projects
@@ -99,6 +104,7 @@ function Nav() {
 							smooth={true}
 							offset={-90}
 							duration={500}
+							activeClass="active"
 							className="navLink"
 						>
 							Contact
@@ -152,6 +158,7 @@ function Nav() {
 						smooth={true}
 						offset={-90}
 						duration={500}
+						activeClass="active"
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>
@@ -163,6 +170,7 @@ function Nav() {
 						smooth={true}
 						offset={-90}
 						duration={500}
+						activeClass="active"
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>
@@ -174,6 +182,7 @@ function Nav() {
 						smooth={true}
 						offset={-90}
 						duration={500}
+						activeClass="active"
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>
@@ -185,6 +194,7 @@ function Nav() {
 						smooth={true}
 						offset={-90}
 						duration={500}
+						activeClass="active"
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>
@@ -196,6 +206,7 @@ function Nav() {
 						smooth={true}
 						offset={-90}
 						duration={500}
+						activeClass="active"
 						className="sidebar-link"
 						onClick={() => setSidebar(false)}
 					>

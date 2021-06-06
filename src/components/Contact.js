@@ -1,6 +1,12 @@
 import Illustration from "../images/illustration1.svg";
+import kwesforms from "kwesforms";
+import { useEffect } from "react";
 
 function Contact() {
+	useEffect(() => {
+		kwesforms.init();
+	}, []);
+
 	return (
 		<div
 			className="flex flex-col items-center bg-nik-lightGray pt-10 pb-12 px-10 sm:px-16"
@@ -14,48 +20,59 @@ function Contact() {
 				<div className="w-0 md:w-1/2 p-5 hidden lg:flex">
 					<img src={Illustration} alt="3D Illustration" />
 				</div>
-				<div className="flex flex-col items-start w-full lg:w-1/2 bg-white rounded-2xl px-7 py-8 sm:px-12 sm:py-12 border border-transparent hover:border-gray-200 hover:shadow-md space-y-6 text-sm sm:text-base">
+				<form
+					className="kwes-form flex flex-col items-start w-full lg:w-1/2 bg-white rounded-2xl px-7 py-8 sm:px-12 sm:py-12 border border-transparent hover:border-gray-200 hover:shadow-md space-y-6 text-sm sm:text-base"
+					action="https://kwes.io/api/foreign/forms/m3bAgjcpr6VHtmdFldqT"
+				>
 					<div className="flex flex-col w-full space-y-4">
 						<div className="flex flex-col items-start text-gray-500 space-y-3">
-							<label className="text-base sm:text-lg">Your Name</label>
-							<div className="w-full bg-nik-lightGray rounded-xl px-5 py-4 sm:px-6 sm:py-5 border border-transparent hover:shadow-inner hover:border-gray-200">
-								<input
-									type="text"
-									name="name"
-									placeholder="Write Your Name.."
-									className="w-full bg-transparent focus:outline-none"
-								/>
-							</div>
+							<label for="name" className="text-base sm:text-lg sr-only">
+								Your Name
+							</label>
+
+							<input
+								type="text"
+								name="name"
+								data-kw-rules="required|min:2|max:50"
+								placeholder="Your Name *"
+								className="w-full rounded-xl px-5 py-4 sm:px-6 sm:py-5 bg-nik-lightGray focus:outline-none border border-transparent hover:shadow-inner hover:border-gray-200"
+							/>
 						</div>
 						<div className="flex flex-col items-start text-gray-500 space-y-3">
-							<label className="text-base sm:text-lg">Email</label>
-							<div className="w-full bg-nik-lightGray rounded-xl px-5 py-4 sm:px-6 sm:py-5 border border-transparent hover:shadow-inner hover:border-gray-200">
-								<input
-									type="email"
-									name="email"
-									placeholder="Write Your Email.."
-									className="w-full bg-transparent focus:outline-none"
-								/>
-							</div>
+							<label for="email" className="text-base sm:text-lg sr-only">
+								Email
+							</label>
+
+							<input
+								type="text"
+								name="email"
+								data-kw-rules="required|email"
+								placeholder="Your Email *"
+								className="w-full rounded-xl px-5 py-4 sm:px-6 sm:py-5 bg-nik-lightGray focus:outline-none border border-transparent hover:shadow-inner hover:border-gray-200"
+							/>
 						</div>
+
 						<div className="flex flex-col items-start text-gray-500 space-y-3">
-							<label className="text-base sm:text-lg">Message</label>
-							<div className="w-full bg-nik-lightGray rounded-xl px-5 py-4 sm:px-6 sm:py-5 border border-transparent hover:shadow-inner hover:border-gray-200">
-								<textarea
-									name="message"
-									placeholder="Write a Message..."
-									className="w-full bg-transparent focus:outline-none"
-								></textarea>
-							</div>
+							<label for="message" className="text-base sm:text-lg sr-only">
+								Message
+							</label>
+
+							<textarea
+								rows="5"
+								name="message"
+								data-kw-rules="required|min:50|max:1000"
+								placeholder="Write a Message *"
+								className="w-full rounded-xl px-5 py-4 sm:px-6 sm:py-5 bg-nik-lightGray focus:outline-none border border-transparent hover:shadow-inner hover:border-gray-200"
+							></textarea>
 						</div>
 					</div>
 					<button
 						type="submit"
-						className="bg-gray-500 text-white text-sm md:text-sm lg:text-base xl:text-lg px-3 py-3 sm:px-4 sm:py-3 lg:px-5 lg:py-4 rounded-xl hover:shadow-xl hover:bg-gray-200 hover:text-gray-500 border border-transparent hover:border-gray-300"
+						className="bg-gray-500 text-white text-sm md:text-sm lg:text-base xl:text-lg px-3 py-3 sm:px-4 sm:py-3 lg:px-5 lg:py-4 rounded-xl hover:shadow-xl hover:bg-gray-200 hover:text-gray-500 border border-transparent hover:border-gray-300 focus:outline-none"
 					>
 						Submit
 					</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	);
