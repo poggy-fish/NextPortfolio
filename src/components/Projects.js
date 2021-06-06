@@ -21,25 +21,25 @@ function Projects() {
 					img={Portfolio}
 					title="My Portfolio"
 					description="I built this Responsive Portfolio using NextJS, Tailwind CSS & Framer Motion."
-					link="#"
+					link="/"
 				/>
 				<ProjectCard2
 					img={InstagramClone}
 					title="Instagram Clone"
 					description="Redesign Instagram Clone using React, Tailwind CSS & React Hooks"
-					link=""
+					link="https://instanik.netlify.app/"
 				/>
 				<ProjectCard
 					img={GoogleClone}
 					title="Google Clone"
 					description="I built this Google Clone using NextJS, React, Tailwind CSS & Google API."
-					link=""
+					link="https://google-next.vercel.app/"
 				/>
 				<ProjectCard2
 					img={MusicPlayer}
 					title="Music Player"
 					description="Responsive Music Player built with React, SCSS & React Hooks"
-					link=""
+					link="https://music-nik.netlify.app/"
 				/>
 			</div>
 			<a
