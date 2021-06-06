@@ -134,7 +134,7 @@ function Nav() {
 				animate={sidebar ? "open" : "closed"}
 				variants={variants}
 			>
-				<div className="flex items-center justify-between py-8 sticky top-0 w-full bg-nik-lightGray">
+				<div className="flex items-center justify-between py-8 w-full">
 					<div className="flex items-center space-x-2">
 						<img src={Logo} alt="Nikunj Thesiya" className="w-10 sm:w-12" />
 						<h3 className="text-xl text-[#5C637C] font-light">
@@ -214,9 +214,16 @@ function Nav() {
 					</Link>
 				</div>
 
-				<button className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full mt-3 mb-8">
+				<Link
+					to="contact"
+					spy={true}
+					smooth={true}
+					offset={-90}
+					duration={500}
+					className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full mt-3 mb-8"
+				>
 					Hire me
-				</button>
+				</Link>
 			</motion.div>
 		</motion.div>
 	);
