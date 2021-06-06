@@ -39,12 +39,18 @@ function Nav() {
 						: "flex bg-[#F6F8FB] items-center justify-between w-full py-8 px-8 sm:px-16"
 				}
 			>
-				<div className="flex items-center space-x-3">
+				<Link
+					to="heroSection"
+					smooth={true}
+					offset={-110}
+					duration={200}
+					className="flex items-center space-x-3 cursor-pointer"
+				>
 					<img src={Logo} alt="Nikunj Thesiya" className="w-12" />
 					<h3 className="text-2xl text-[#5C637C] font-light hidden md:flex">
 						NIKUNJ<span className="font-semibold">THESIYA</span>
 					</h3>
-				</div>
+				</Link>
 				<div className="flex text-[#5C637C] items-center space-x-3">
 					<div className="hidden lg:flex items-center space-x-4">
 						<Link
@@ -98,11 +104,18 @@ function Nav() {
 							Contact
 						</Link>
 					</div>
-					<button className="bg-gray-200 focus:outline-none font-medium text-[#5C637C] px-5 py-3 rounded-lg">
+					<Link
+						to="contact"
+						spy={true}
+						smooth={true}
+						offset={-90}
+						duration={500}
+						className="bg-white shadow-lg border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-gray-500 px-5 py-3 rounded-lg cursor-pointer"
+					>
 						Hire me
-					</button>
+					</Link>
 					<button
-						className="lg:hidden bg-gray-200 focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl"
+						className="lg:hidden bg-white border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl"
 						onClick={() => setSidebar(true)}
 					>
 						<RiMenuLine />
@@ -111,7 +124,7 @@ function Nav() {
 			</div>
 
 			<motion.div
-				className="z-50 flex items-center lg:hidden flex-col fixed top-0 h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB]  overflow-y-scroll hide-scrollbar shadow-2xl"
+				className="z-50 flex items-center lg:hidden flex-col fixed top-0 h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB]  overflow-y-scroll hide-scrollbar shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-md"
 				animate={sidebar ? "open" : "closed"}
 				variants={variants}
 			>
@@ -124,7 +137,7 @@ function Nav() {
 					</div>
 
 					<button
-						className="lg:hidden bg-gray-200 focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl"
+						className="lg:hidden bg-white border border-transparent hover:shadow-md hover:border-gray-200  focus:outline-none font-medium text-gray-500 p-3.5 rounded-lg text-xl"
 						onClick={() => setSidebar(false)}
 					>
 						<IoMdClose />

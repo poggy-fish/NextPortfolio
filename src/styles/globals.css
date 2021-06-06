@@ -22,7 +22,7 @@ body {
 	}
 
 	.sidebar-link {
-		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-gray-200 transition duration-200 ease-in-out;
+		@apply px-10 rounded-lg py-4 text-lg text-[#5C637C] md:text-sm cursor-pointer hover:bg-white transition duration-200 ease-in-out;
 	}
 
 	.socialLink {
