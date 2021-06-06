@@ -60,13 +60,13 @@ function Resume() {
 						logo={Udemy}
 						company="Udemy"
 						title="Advanced CSS and Sass: Flexbox, Grid, Animations and More!"
-						link="#"
+						link="http://ude.my/UC-7b02833b-d6a1-487b-ab5c-d4df5a4a4bae"
 					/>
 					<CertificateCard
 						logo={Udemy}
 						company="Udemy"
 						title="The Complete JavaScript Course 2020: From Zero to Expert!"
-						link="#"
+						link="http://ude.my/UC-UOAMD8X8"
 					/>
 				</div>
 				<div className="flex flex-col space-y-6 md:space-y-0 md:flex-row items-center justify-around w-full mb-6">
@@ -74,13 +74,13 @@ function Resume() {
 						logo={Coursera}
 						company="Coursera"
 						title="Google UX Design"
-						link="#"
+						link="https://www.coursera.org/account/accomplishments/verify/WPH6AVCEMBC2"
 					/>
 					<CertificateCard
 						logo={FreeCodeCamp}
 						company="FreeCodeCamp"
 						title="Front End Libraries"
-						link="#"
+						link="https://freecodecamp.org/certification/nikunjthesiya/front-end-libraries"
 					/>
 				</div>
 				<div className="flex flex-col space-y-6 md:space-y-0 md:flex-row items-center md:items-start justify-around w-full mb-6">
@@ -88,13 +88,13 @@ function Resume() {
 						logo={LinkedIn}
 						company="LinkedIn"
 						title="React.js Essential Training"
-						link="#"
+						link="https://www.linkedin.com/learning/react-js-essential-training"
 					/>
 					<CertificateCard
 						logo={Educative}
 						company="Educative"
 						title="Understanding Redux: A Beginner's Guide To State Management"
-						link="#"
+						link="https://www.educative.io/verify-certificate/585DM2tR630n8op4Jf4GW8NGpVMgFq"
 					/>
 				</div>
 			</div>

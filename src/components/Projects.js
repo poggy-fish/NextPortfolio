@@ -42,10 +42,14 @@ function Projects() {
 					link=""
 				/>
 			</div>
-			<button className="flex items-center shadow-lg bg-gray-50 hover:bg-gray-100 md:h-20 px-6 py-5 md:px-8 md:py-6 rounded-3xl text-gray-500 space-x-4 mt-12 focus:outline-none text-base md:text-lg border border-transparent hover:border-gray-200">
+			<a
+				href="https://github.com/NikunjThesiya?tab=repositories"
+				target="_blank"
+				className="flex items-center shadow-lg bg-gray-50 hover:bg-gray-100 md:h-20 px-6 py-5 md:px-8 md:py-6 rounded-3xl text-gray-500 space-x-4 mt-12 focus:outline-none text-base md:text-lg border border-transparent hover:border-gray-200 cursor-pointer"
+			>
 				<img src={Github} alt="Nikunj Thesiya" className="h-7 md:h-10" />
 				<p>See More</p>
-			</button>
+			</a>
 		</div>
 	);
 }

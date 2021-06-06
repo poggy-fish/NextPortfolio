@@ -26,18 +26,34 @@ function HeroSection() {
 					</h6>
 
 					<div className="flex space-x-5 pt-5">
-						<div className="socialLink">
+						<a
+							href="https://twitter.com/NikunjThesiya2"
+							target="_blank"
+							className="socialLink"
+						>
 							<img src={Twitter} alt="Nikunj Thesiya" />
-						</div>
-						<div className="socialLink">
+						</a>
+						<a
+							href="https://www.instagram.com/ll_nikunj.thesiya_ll/"
+							target="_blank"
+							className="socialLink"
+						>
 							<img src={Instagram} alt="Nikunj Thesiya" className="" />
-						</div>
-						<div className="socialLink">
+						</a>
+						<a
+							href="https://www.linkedin.com/in/nikunjthesiya/"
+							target="_blank"
+							className="socialLink"
+						>
 							<img src={LinkedIn} alt="Nikunj Thesiya" className="" />
-						</div>
-						<div className="socialLink">
+						</a>
+						<a
+							href="https://github.com/NikunjThesiya"
+							target="_blank"
+							className="socialLink"
+						>
 							<img src={Github} alt="Nikunj Thesiya" className="" />
-						</div>
+						</a>
 					</div>
 				</div>
 				<div>
