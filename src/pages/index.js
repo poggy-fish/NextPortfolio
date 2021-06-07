@@ -26,6 +26,12 @@ export default function Home() {
 				<meta name="twitter:creator" content="@NikunjThesiya2" />
 
 				<meta property="og:url" content="https://www.nikunjthesiya.tech/" />
+
+				<meta
+					property="article:author"
+					content="https://www.nikunjthesiya.tech/"
+				/>
+
 				<meta property="og:image" content={Preview} key="ogimage" />
 				<meta
 					property="og:site_name"
