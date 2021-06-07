@@ -1,11 +1,12 @@
 import ProjectCard from "./ProjectCard";
-import GoogleClone from "../images/googleclone.jpg";
-import InstagramClone from "../images/Instagramclone.jpg";
-import MusicPlayer from "../images/musicplayer.jpg";
 import GithubWhite from "../images/github-white.svg";
 import Github from "../images/github.svg";
 import ProjectCard2 from "./ProjectCard2";
 import Portfolio from "../images/portfolio.svg";
+import AmazonClone from "../images/amazonthumbnail.svg";
+import GoogleClone from "../images/googlethumbnail.svg";
+import InstagramClone from "../images/instagramthumbnail.svg";
+import MusicPlayer from "../images/musicthumbnail.svg";
 
 function Projects() {
 	return (
@@ -24,10 +25,10 @@ function Projects() {
 					link="/"
 				/>
 				<ProjectCard2
-					img={InstagramClone}
-					title="Instagram Clone"
-					description="Redesign Instagram Clone using React, Tailwind CSS & React Hooks"
-					link="https://instanik.netlify.app/"
+					img={AmazonClone}
+					title="Amazon Clone"
+					description="Amazon Clone using NextJS, React, Tailwind CSS.Framer Motion"
+					link="https://amazon-next-nik.vercel.app/"
 				/>
 				<ProjectCard
 					img={GoogleClone}
@@ -36,6 +37,13 @@ function Projects() {
 					link="https://google-next.vercel.app/"
 				/>
 				<ProjectCard2
+					img={InstagramClone}
+					title="Instagram Clone"
+					description="Redesign Instagram Clone using React, Tailwind CSS & React Hooks"
+					link="https://instanik.netlify.app/"
+				/>
+
+				<ProjectCard
 					img={MusicPlayer}
 					title="Music Player"
 					description="Responsive Music Player built with React, SCSS & React Hooks"

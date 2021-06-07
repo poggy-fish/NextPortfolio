@@ -59,19 +59,19 @@ export default function Home() {
 				<title>Nikunj Thesiya</title>
 				<link rel="icon" href={favicon} />
 			</Head>
-			{/* {spinner ? (
+			{spinner ? (
 				<Loading />
-			) : ( */}
-			<div className="flex flex-col">
-				<Nav />
-				<HeroSection />
-				<About />
-				<Resume />
-				<Projects />
-				<Contact />
-				<Footer />
-			</div>
-			{/* )} */}
+			) : (
+				<div className="flex flex-col">
+					<Nav />
+					<HeroSection />
+					<About />
+					<Resume />
+					<Projects />
+					<Contact />
+					<Footer />
+				</div>
+			)}
 		</div>
 	);
 }
