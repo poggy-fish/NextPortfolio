@@ -14,6 +14,7 @@ import Firebase from "../images/firebase.svg";
 import Figma from "../images/figma.svg";
 import XD from "../images/adobexd.svg";
 import Jquery from "../images/jquery.svg";
+import Motion from "../images/framer.svg";
 import Bootstrap from "../images/bootstrap.svg";
 import TailwindCSS from "../images/tailwindcss.svg";
 import Sass from "../images/sass.svg";
@@ -114,6 +115,7 @@ function Resume() {
 					<SkillCard img={Redux} title="Redux" />
 					<SkillCard img={NextJS} title="NextJS" />
 					<SkillCard img={StyledComponents} title="Styled Components" />
+					<SkillCard img={Motion} title="Framer Motion" />
 					<SkillCard img={MaterialUI} title="Material UI" />
 					<SkillCard img={SemanticUI} title="Semantic UI" />
 					<SkillCard img={Firebase} title="Firebase" />
