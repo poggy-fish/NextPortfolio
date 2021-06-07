@@ -1,8 +1,10 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
+import Loading from "../components/Loading";
 import Nav from "../components/Nav";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
@@ -10,6 +12,12 @@ import favicon from "../images/logo.svg";
 import Preview from "../images/portfolio.jpg";
 
 export default function Home() {
+	const [spinner, setSpinner] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => setSpinner(false), 2000);
+	}, []);
+
 	return (
 		<div className="flex flex-col">
 			<Head>
@@ -51,13 +59,19 @@ export default function Home() {
 				<title>Nikunj Thesiya</title>
 				<link rel="icon" href={favicon} />
 			</Head>
-			<Nav />
-			<HeroSection />
-			<About />
-			<Resume />
-			<Projects />
-			<Contact />
-			<Footer />
+			{spinner ? (
+				<Loading />
+			) : (
+				<div className="flex flex-col">
+					<Nav />
+					<HeroSection />
+					<About />
+					<Resume />
+					<Projects />
+					<Contact />
+					<Footer />
+				</div>
+			)}
 		</div>
 	);
 }
