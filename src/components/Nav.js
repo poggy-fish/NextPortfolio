@@ -221,7 +221,7 @@ function Nav() {
 					smooth={true}
 					offset={-90}
 					duration={500}
-					className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full mt-3 mb-8"
+					className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full cursor-pointer hover:shadow-lg text-center mt-3 mb-8"
 				>
 					Hire me
 				</Link>
