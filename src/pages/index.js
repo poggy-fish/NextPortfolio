@@ -21,11 +21,7 @@ export default function Home() {
 				/>
 
 				{/* Open Graph */}
-				<meta
-					name="twitter:card"
-					content="This is Nikunj Thesiya. I am Front End Developer || JavaScript - React Developer || Self Taught Programmer. I design & develop a Modern Responsive Websites. You can check my work on my portfolio."
-					key="twcard"
-				/>
+				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content="@NikunjThesiya" />
 				<meta name="twitter:creator" content="@NikunjThesiya2" />
 
