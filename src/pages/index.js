@@ -32,6 +32,8 @@ export default function Home() {
 					content="https://www.nikunjthesiya.tech/"
 				/>
 
+				<meta name="author" content="Nikunj Thesiya"></meta>
+
 				<meta property="og:image" content={Preview} key="ogimage" />
 				<meta
 					property="og:site_name"
