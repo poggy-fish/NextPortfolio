@@ -7,7 +7,7 @@ import Nav from "../components/Nav";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import favicon from "../images/logo.svg";
-import Preview from "../images/portfolio.svg";
+import Preview from "../images/portfolio.jpg";
 
 export default function Home() {
 	return (
