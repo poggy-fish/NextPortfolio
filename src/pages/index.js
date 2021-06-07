@@ -20,20 +20,18 @@ export default function Home() {
 					content="This is Nikunj Thesiya. I am Front End Developer || JavaScript - React Developer || Self Taught Programmer. I design & develop a Modern Responsive Websites. You can check my work on my portfolio."
 				/>
 
-				{/* Open Graph */}
+				{/* Open Graph Meta Tags*/}
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content="@NikunjThesiya" />
 				<meta name="twitter:creator" content="@NikunjThesiya2" />
-
 				<meta property="og:url" content="https://www.nikunjthesiya.tech/" />
-
 				<meta
 					property="article:author"
 					content="https://www.nikunjthesiya.tech/"
 				/>
-
+				<meta property="og:type" content="website" />
+				<meta property="fb:app_id" content="482063489741872" />
 				<meta name="author" content="Nikunj Thesiya"></meta>
-
 				<meta property="og:image" content={Preview} key="ogimage" />
 				<meta
 					property="og:site_name"
@@ -50,7 +48,6 @@ export default function Home() {
 					content="This is Nikunj Thesiya. I am Front End Developer || JavaScript - React Developer || Self Taught Programmer. I design & develop a Modern Responsive Websites. You can check my work on my portfolio."
 					key="ogdesc"
 				/>
-
 				<title>Nikunj Thesiya</title>
 				<link rel="icon" href={favicon} />
 			</Head>
