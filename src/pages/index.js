@@ -32,9 +32,9 @@ export default function Home() {
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@NikunjThesiya" />
 				<meta name="twitter:creator" content="@NikunjThesiya2" />
-                                <meta name="twitter:title" content="Nikunj Thesiya - JavaScript / React Developer">
-                                <meta name="twitter:description" content="I Design and Develop a modern stylish websites using modern tools like React, NextJS, Tailwind CSS etc.">
-                                <meta name="twitter:image" content={Preview}>
+                                <meta name="twitter:title" content="Nikunj Thesiya - JavaScript / React Developer"/>
+                                <meta name="twitter:description" content="I Design and Develop a modern stylish websites using modern tools like React, NextJS, Tailwind CSS etc."/>
+                                <meta name="twitter:image" content={Preview}/>
 				<meta property="og:url" content="https://www.nikunjthesiya.tech/" />
 				
                                 <meta
