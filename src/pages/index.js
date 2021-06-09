@@ -10,6 +10,7 @@ import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import favicon from "../images/logo.svg";
 import Preview from "../images/portfolio.jpg";
+import TwitterCardImg from "../images/twittercardimg.png";
 
 export default function Home() {
 	const [spinner, setSpinner] = useState(true);
@@ -27,7 +28,6 @@ export default function Home() {
 					name="description"
 					content="This is Nikunj Thesiya. I am Front End Developer || JavaScript - React Developer || Self Taught Programmer. I design & develop a Modern Responsive Websites. You can check my work on my portfolio."
 				/>
-
 				{/* Open Graph Meta Tags*/}
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@NikunjThesiya2" />
@@ -40,10 +40,16 @@ export default function Home() {
 					name="twitter:description"
 					content="I Design and Develop a modern stylish websites using modern tools like React, NextJS, Tailwind CSS etc."
 				/>
+				<meta name="twitter:image" content={TwitterCardImg} />
 				<meta
-					name="twitter:image"
-					content="https://github.com/NikunjThesiya/NikunjThesiya/blob/main/Images/twittercardimg.png"
+					name="twitter:title"
+					content="Nikunj Thesiya - JavaScript / React Developer"
 				/>
+				<meta
+					name="twitter:description"
+					content="I Design and Develop a modern stylish websites using modern tools like React, NextJS, Tailwind CSS etc."
+				/>
+				<meta name="twitter:image" content={Preview} />
 				<meta property="og:url" content="https://www.nikunjthesiya.tech/" />
 				<meta
 					property="article:author"
