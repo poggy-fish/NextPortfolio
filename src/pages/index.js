@@ -30,7 +30,7 @@ export default function Home() {
 
 				{/* Open Graph Meta Tags*/}
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@NikunjThesiya" />
+				<meta name="twitter:site" content="@NikunjThesiya2" />
 				<meta name="twitter:creator" content="@NikunjThesiya2" />
 				<meta
 					name="twitter:title"
@@ -40,7 +40,10 @@ export default function Home() {
 					name="twitter:description"
 					content="I Design and Develop a modern stylish websites using modern tools like React, NextJS, Tailwind CSS etc."
 				/>
-				<meta name="twitter:image" content={Preview} />
+				<meta
+					name="twitter:image"
+					content="https://github.com/NikunjThesiya/NikunjThesiya/blob/main/Images/twittercardimg.png"
+				/>
 				<meta property="og:url" content="https://www.nikunjthesiya.tech/" />
 				<meta
 					property="article:author"

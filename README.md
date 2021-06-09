@@ -1,3 +1,9 @@
+<h1 align="center">My Portfolio</h1>
+<div>
+  <a href="https://www.nikunjthesiya.tech/"><img src="https://github.com/NikunjThesiya/NikunjThesiya/blob/main/Images/portfolio-pro.png" alt="Portfolio by Nikunj Thesiya" align="center" width="100%"></a>
+</div>
+
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
