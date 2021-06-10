@@ -36,7 +36,7 @@ function Nav() {
 				className={
 					navbar
 						? "stickyNavbarStyles"
-						: "flex bg-[#F6F8FB] items-center justify-between w-full py-8 px-8 sm:px-16"
+						: "flex bg-[#F6F8FB] items-center justify-between w-full py-8 px-8 sm:px-16 z-50"
 				}
 			>
 				<Link

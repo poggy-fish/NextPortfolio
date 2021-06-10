@@ -23,8 +23,15 @@ import SemanticUI from "../images/semantic.svg";
 import MaterialUI from "../images/material-ui.svg";
 import Github from "../images/github.svg";
 import SkillCard from "./SkillCard";
+import { FaEye } from "react-icons/fa";
+import ResumePreview from "../images/resume-preview.svg";
+import { IoMdClose } from "react-icons/io";
+import { FiDownload } from "react-icons/fi";
+import { useState } from "react";
+// import ResumePDF from "../images/resume.pdf";
 
 function Resume() {
+	const [resumeBtn, setResumeBtn] = useState("false");
 	return (
 		<div
 			className="flex flex-col items-center bg-nik-lightGray pt-10 pb-12 px-4 sm:px-16"
@@ -123,6 +130,18 @@ function Resume() {
 					<SkillCard img={Github} title="Github" />
 				</div>
 			</div>
+
+			{/* Resume */}
+
+			<a
+				href="./resume.pdf"
+				target="_blank"
+				download
+				className="flex space-x-4 text-xl md:text-2xl my-6 items-center bg-white shadow-lg border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-gray-500 px-6 py-5 rounded-2xl cursor-pointer"
+			>
+				<FiDownload className="text-2xl md:text-3xl" />
+				<span>Resume</span>
+			</a>
 		</div>
 	);
 }
