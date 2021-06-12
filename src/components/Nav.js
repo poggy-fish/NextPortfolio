@@ -131,101 +131,109 @@ function Nav() {
 			</div>
 
 			<motion.div
-				className="z-50 flex items-center lg:hidden flex-col fixed top-0 h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB]  overflow-y-scroll hide-scrollbar shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-md"
+				className="z-50  flex  w-full items-center lg:hidden fixed top-0 h-screen"
 				initial={{ opacity: 0, x: "-100%" }}
 				animate={sidebar ? "open" : "closed"}
 				variants={variants}
 			>
-				<div className="flex items-center justify-between py-8 w-full">
-					<div className="flex items-center space-x-2">
-						<img src={Logo} alt="Nikunj Thesiya" className="w-10 sm:w-12" />
-						<h3 className="text-xl text-[#5C637C] font-light">
-							NIKUNJ<span className="font-semibold">THESIYA</span>
-						</h3>
+				<div className="flex items-center h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB] flex-col overflow-y-scroll hide-scrollbar shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-md">
+					<div className="flex items-center justify-between py-8 w-full">
+						<div className="flex items-center space-x-2">
+							<img src={Logo} alt="Nikunj Thesiya" className="w-10 sm:w-12" />
+							<h3 className="text-xl text-[#5C637C] font-light">
+								NIKUNJ<span className="font-semibold">THESIYA</span>
+							</h3>
+						</div>
+
+						<button
+							className="lg:hidden bg-white border border-transparent hover:shadow-md hover:border-gray-200  focus:outline-none font-medium text-gray-500 p-3.5 rounded-lg text-xl"
+							onClick={() => setSidebar(false)}
+						>
+							<IoMdClose />
+						</button>
 					</div>
 
-					<button
-						className="lg:hidden bg-white border border-transparent hover:shadow-md hover:border-gray-200  focus:outline-none font-medium text-gray-500 p-3.5 rounded-lg text-xl"
-						onClick={() => setSidebar(false)}
-					>
-						<IoMdClose />
-					</button>
-				</div>
+					{/* Mobile First Menu */}
+					<div className="flex flex-col items-center space-y-2 w-full py-5">
+						<Link
+							to="heroSection"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							activeClass="active"
+							className="sidebar-link"
+							onClick={() => setSidebar(false)}
+						>
+							Home
+						</Link>
+						<Link
+							to="about"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							activeClass="active"
+							className="sidebar-link"
+							onClick={() => setSidebar(false)}
+						>
+							About
+						</Link>
+						<Link
+							to="resume"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							activeClass="active"
+							className="sidebar-link"
+							onClick={() => setSidebar(false)}
+						>
+							Resume
+						</Link>
+						<Link
+							to="projects"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							activeClass="active"
+							className="sidebar-link"
+							onClick={() => setSidebar(false)}
+						>
+							Projects
+						</Link>
+						<Link
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={-90}
+							duration={500}
+							activeClass="active"
+							className="sidebar-link"
+							onClick={() => setSidebar(false)}
+						>
+							Contact
+						</Link>
+					</div>
 
-				{/* Mobile First Menu */}
-				<div className="flex flex-col items-center space-y-2 w-full py-5">
-					<Link
-						to="heroSection"
-						spy={true}
-						smooth={true}
-						offset={-90}
-						duration={500}
-						activeClass="active"
-						className="sidebar-link"
-						onClick={() => setSidebar(false)}
-					>
-						Home
-					</Link>
-					<Link
-						to="about"
-						spy={true}
-						smooth={true}
-						offset={-90}
-						duration={500}
-						activeClass="active"
-						className="sidebar-link"
-						onClick={() => setSidebar(false)}
-					>
-						About
-					</Link>
-					<Link
-						to="resume"
-						spy={true}
-						smooth={true}
-						offset={-90}
-						duration={500}
-						activeClass="active"
-						className="sidebar-link"
-						onClick={() => setSidebar(false)}
-					>
-						Resume
-					</Link>
-					<Link
-						to="projects"
-						spy={true}
-						smooth={true}
-						offset={-90}
-						duration={500}
-						activeClass="active"
-						className="sidebar-link"
-						onClick={() => setSidebar(false)}
-					>
-						Projects
-					</Link>
 					<Link
 						to="contact"
 						spy={true}
 						smooth={true}
 						offset={-90}
 						duration={500}
-						activeClass="active"
-						className="sidebar-link"
+						className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full cursor-pointer hover:shadow-lg text-center mt-3 mb-8"
 						onClick={() => setSidebar(false)}
 					>
-						Contact
+						Hire me
 					</Link>
 				</div>
 
-				<Link
-					to="contact"
-					spy={true}
-					smooth={true}
-					offset={-90}
-					duration={500}
-					className="text-gray-100 focus:outline-none font-medium bg-[#5C637C] px-5 text-lg py-3 rounded-lg w-full cursor-pointer hover:shadow-lg text-center mt-3 mb-8"
-				>
-					Hire me
-				</Link>
+				<div
+					className="flex-grow bg-black h-screen bg-opacity-25"
+					onClick={() => setSidebar(false)}
+				></div>
 			</motion.div>
 		</motion.div>
 	);
