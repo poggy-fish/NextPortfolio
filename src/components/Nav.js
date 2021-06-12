@@ -15,7 +15,7 @@ function Nav() {
 	};
 
 	const changeBackground = () => {
-		if (window.scrollY >= 80) {
+		if (window.scrollY >= 50) {
 			setNavbar(true);
 		} else {
 			setNavbar(false);
@@ -28,6 +28,7 @@ function Nav() {
 
 	return (
 		<motion.div
+			initial={{ position: "relative" }}
 			animate={
 				navbar ? { position: "sticky", top: 0 } : { position: "relative" }
 			}

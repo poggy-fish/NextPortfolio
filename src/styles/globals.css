@@ -27,7 +27,7 @@ body {
 	}
 
 	.socialLink {
-		@apply flex items-center justify-center bg-white hover:shadow-inner shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer;
+		@apply flex items-center justify-center bg-white hover:shadow-lg shadow-2xl w-14 h-14 rounded-2xl p-3.5 cursor-pointer border border-transparent hover:border-gray-200;
 	}
 
 	.active {
