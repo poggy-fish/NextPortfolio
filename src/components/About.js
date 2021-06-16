@@ -1,4 +1,4 @@
-import AboutImg from "../images/aboutimg.svg";
+import AboutImg from "../images/aboutimg.png";
 import UiDesign from "../images/user-interface.svg";
 import Coding from "../images/code.svg";
 import Mountain from "../images/mountain.svg";
@@ -15,12 +15,12 @@ function About() {
 			<h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-nik-dark mb-10">
 				About me
 			</h3>
-			<div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 object-contai bg-nik-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
+			<div className="flex items-center justify-center w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 object-contain bg-nik-lightGray p-3 rounded-full shadow-xl hover:shadow-inner cursor-pointer hover:border-gray-100">
 				<img src={AboutImg} alt="Nikunj Thesiya" className="rounded-full" />
 			</div>
 
 			<div className="p-8 flex flex-col space-y-4">
-				<p className="text-justify text-base sm:text-lg text-gray-600">
+				<p className="text-base text-justify sm:text-lg text-gray-600">
 					I'm a Freelance JavaScript Developer & Self taught Programmer based in
 					Gujarat, INDIA. I have completed my graduation in computer science,
 					and currently I’m pursuing my Master Degree in computer science. I'm a

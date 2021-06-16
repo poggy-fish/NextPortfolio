@@ -1,4 +1,5 @@
 import HeroImg from "../images/lgimg.svg";
+import NikunjThesiya from "../images/nikunjthesiya.svg";
 import Facebook from "../images/facebook.svg";
 import Twitter from "../images/twitter.svg";
 import Instagram from "../images/instagram.svg";
@@ -58,9 +59,9 @@ function HeroSection() {
 				</div>
 				<div>
 					<img
-						src={HeroImg}
+						src={NikunjThesiya}
 						alt="Nikunj Thesiya"
-						className="md:w-[360px] lg:w-[400px] xl:w-[440px]"
+						className="md:w-[360px] lg:w-[400px] xl:w-[500px]"
 					/>
 				</div>
 			</div>
