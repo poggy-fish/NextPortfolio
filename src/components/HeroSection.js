@@ -62,6 +62,7 @@ function HeroSection() {
 						src={NikunjThesiya}
 						alt="Nikunj Thesiya"
 						className="md:w-[360px] lg:w-[400px] xl:w-[500px]"
+						loading="lazy"
 					/>
 				</div>
 			</div>

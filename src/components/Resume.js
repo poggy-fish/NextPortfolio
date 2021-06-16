@@ -24,11 +24,9 @@ import MaterialUI from "../images/material-ui.svg";
 import Github from "../images/github.svg";
 import SkillCard from "./SkillCard";
 import { FaEye } from "react-icons/fa";
-import ResumePreview from "../images/resume-preview.svg";
 import { IoMdClose } from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
 import { useState } from "react";
-// import ResumePDF from "../images/resume.pdf";
 
 function Resume() {
 	const [resumeBtn, setResumeBtn] = useState("false");
