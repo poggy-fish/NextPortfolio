@@ -1,5 +1,4 @@
-import HeroImg from "../images/lgimg.svg";
-import NikunjThesiya from "../images/nikunjthesiya.svg";
+import NikunjThesiya from "../images/nikunjthesiya.png";
 import Facebook from "../images/facebook.svg";
 import Twitter from "../images/twitter.svg";
 import Instagram from "../images/instagram.svg";
